@@ -20,7 +20,7 @@ export default function LoginPage({ setCurrentPage }) {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/token/",
+        `${import.meta.env.VITE_API_BASE_URL}/token/`,
         {
           username: email,
           password: password,
@@ -57,7 +57,7 @@ export default function LoginPage({ setCurrentPage }) {
 
     try {
       await axios.post(
-        "http://127.0.0.1:8000/api/forgot-password/",
+        `${import.meta.env.VITE_API_BASE_URL}/forgot-password/`,
         { email: forgotEmail }
       );
 

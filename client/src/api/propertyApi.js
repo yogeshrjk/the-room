@@ -13,6 +13,6 @@ export const updateProperty = async (id, data) => {
 
 
 export const getProperties = async () => {
-  const response = await axios.get("http://127.0.0.1:8000/api/properties/");
+  const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/properties/`);
   return response.data;
 };
