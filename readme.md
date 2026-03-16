@@ -78,7 +78,6 @@ npm start
 
 ## Future Improvements
 
-- Property Search & Filters  
 - Chat Between Owner & Buyer  
 - Reviews & Ratings  
 - Map Integration  
